@@ -1,0 +1,1 @@
+#drop-area{width:400px;height:200px;margin:20px auto;line-height:200px;text-align:center;cursor:pointer;border:2px dashed var(--bs-body-color);backgroundColor:var(--bs-body-bg)}#preview-container{text-align:center}#drop-area.drag-over{color:var(--bs-body-bg);background-color:var(--bs-body-color);border:2px dashed var(--bs-primary)}
