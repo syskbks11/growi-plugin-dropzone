@@ -39,8 +39,8 @@ export const helloGROWI = (Tag: React.FunctionComponent<any>): React.FunctionCom
           const attachments = await Promise.all(promises);
           const result = attachments.map((attachment) => {
             return attachment.fileFormat?.split('/')[0] === 'image'
-              ? `![${attachment.fileName}](${attachment.filePathProxied})`
-              : `[${attachment.fileName}](${attachment.filePathProxied})`;
+              ? `![${attachment.originalName}](${attachment.filePathProxied})`
+              : `[${attachment.originalName}](${attachment.filePathProxied})`;
           });
           const contents = await page.contents();
           const newContents = `${contents}\n${result.join('\n')}`;
